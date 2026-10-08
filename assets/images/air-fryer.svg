@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d1d5db;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="basketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d5281;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="10" stdDeviation="14" flood-color="#00000045"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Air fryer group -->
+  <g filter="url(#shadow)">
+    <!-- BASE BODY -->
+    <ellipse cx="250" cy="390" rx="145" ry="30" fill="#c0c4cc"/>
+    <rect x="105" y="200" width="290" height="195" rx="30" fill="url(#bodyGrad)"/>
+    <!-- Side handles -->
+    <rect x="85" y="260" width="22" height="60" rx="11" fill="#d1d5db"/>
+    <rect x="393" y="260" width="22" height="60" rx="11" fill="#d1d5db"/>
+
+    <!-- CONTROL PANEL (front face) -->
+    <rect x="120" y="210" width="260" height="185" rx="20" fill="url(#panelGrad)"/>
+
+    <!-- Display screen -->
+    <rect x="145" y="228" width="210" height="70" rx="10" fill="#0a1628"/>
+    <rect x="150" y="233" width="200" height="60" rx="7" fill="#0d1f3c"/>
+    <!-- Display elements -->
+    <text x="250" y="258" font-size="28" font-weight="700" fill="#22d3ee" font-family="Arial, monospace" text-anchor="middle">180°C</text>
+    <text x="200" y="282" font-size="11" fill="#60a5fa" font-family="Arial" text-anchor="middle">TEMP</text>
+    <text x="250" y="282" font-size="11" fill="#94a3b8" font-family="Arial" text-anchor="middle">|</text>
+    <text x="300" y="282" font-size="11" fill="#60a5fa" font-family="Arial" text-anchor="middle">25:00 MIN</text>
+
+    <!-- Control buttons row -->
+    <circle cx="160" cy="325" r="16" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+    <text x="160" y="330" font-size="11" fill="white" font-family="Arial" text-anchor="middle">−</text>
+
+    <circle cx="200" cy="325" r="16" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+    <text x="200" y="330" font-size="11" fill="white" font-family="Arial" text-anchor="middle">+</text>
+
+    <!-- Start button (large, center) -->
+    <circle cx="250" cy="325" r="22" fill="#ef4444"/>
+    <polygon points="244,316 244,334 263,325" fill="white"/>
+
+    <circle cx="300" cy="325" r="16" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+    <text x="300" y="330" font-size="10" fill="white" font-family="Arial" text-anchor="middle">−</text>
+
+    <circle cx="340" cy="325" r="16" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+    <text x="340" y="330" font-size="10" fill="white" font-family="Arial" text-anchor="middle">+</text>
+
+    <!-- Label below buttons -->
+    <text x="180" y="355" font-size="9" fill="#60a5fa" font-family="Arial" text-anchor="middle">TEMP</text>
+    <text x="320" y="355" font-size="9" fill="#60a5fa" font-family="Arial" text-anchor="middle">TIME</text>
+
+    <!-- Mode presets row -->
+    <rect x="135" y="362" width="230" height="22" rx="8" fill="#0f2042"/>
+    <text x="155" y="377" font-size="8" fill="#94a3b8" font-family="Arial" text-anchor="middle">FRY</text>
+    <text x="193" y="377" font-size="8" fill="#94a3b8" font-family="Arial" text-anchor="middle">BAKE</text>
+    <text x="231" y="377" font-size="8" fill="#22d3ee" font-family="Arial" text-anchor="middle">ROAST</text>
+    <text x="270" y="377" font-size="8" fill="#94a3b8" font-family="Arial" text-anchor="middle">GRILL</text>
+    <text x="308" y="377" font-size="8" fill="#94a3b8" font-family="Arial" text-anchor="middle">REHEAT</text>
+    <text x="350" y="377" font-size="8" fill="#94a3b8" font-family="Arial" text-anchor="middle">PIZZA</text>
+  </g>
+
+  <!-- Basket drawer (bottom portion) -->
+  <g filter="url(#shadow)">
+    <rect x="115" y="360" width="270" height="45" rx="12" fill="url(#basketGrad)"/>
+    <!-- Drawer handle -->
+    <rect x="205" y="368" width="90" height="12" rx="6" fill="#4b5563"/>
+    <rect x="220" y="371" width="60" height="6" rx="3" fill="#374151"/>
+    <!-- Drawer arrow indicator -->
+    <text x="250" y="396" font-size="9" fill="#6b7280" font-family="Arial" text-anchor="middle">◀ PULL TO OPEN ▶</text>
+  </g>
+
+  <!-- TOP LID with vent holes -->
+  <g filter="url(#shadow)">
+    <ellipse cx="250" cy="200" rx="140" ry="28" fill="#d1d5db"/>
+    <!-- Vent slots -->
+    <rect x="200" y="192" width="20" height="6" rx="3" fill="#9ca3af"/>
+    <rect x="228" y="192" width="20" height="6" rx="3" fill="#9ca3af"/>
+    <rect x="256" y="192" width="20" height="6" rx="3" fill="#9ca3af"/>
+    <rect x="284" y="192" width="20" height="6" rx="3" fill="#9ca3af"/>
+    <!-- Philips logo -->
+    <text x="250" y="207" font-size="10" font-weight="700" fill="#1e3a5f" font-family="Arial" text-anchor="middle" letter-spacing="2">PHILIPS</text>
+  </g>
+
+  <!-- Brand text -->
+  <text x="250" y="432" font-size="18" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">Philips HD9270 Air Fryer XL</text>
+  <text x="250" y="454" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">6.2L Digital · Rapid Air Tech · 2000W</text>
+  <text x="250" y="474" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">6 Presets · No-Oil Cooking · Easy Clean</text>
+</svg>

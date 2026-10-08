@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="iplGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2332D6" />
+      <stop offset="100%" stop-color="#181f7e" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="650" fill="#f8fafc" />
+  <ellipse cx="250" cy="540" rx="150" ry="25" fill="#0f172a" opacity="0.1" />
+  <ellipse cx="250" cy="525" rx="130" ry="18" fill="#e2e8f0" />
+  <g transform="translate(175, 230)">
+    <polygon points="75,20 135,140 15,140" fill="url(#iplGrad)" opacity="0.9" />
+    <circle cx="75" cy="95" r="28" fill="#ffffff" />
+    <circle cx="75" cy="95" r="14" fill="#ff5436" />
+  </g>
+  <text x="250" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#0f172a" text-anchor="middle" letter-spacing="3">IKE PRODUCTS LOUNGE</text>
+  <text x="250" y="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="2">EXCLUSIVE ARCHIVE</text>
+</svg>

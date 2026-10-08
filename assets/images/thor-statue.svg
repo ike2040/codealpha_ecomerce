@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="thorRockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="60%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="thorCapeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="thorArmorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="lightningGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Pedestal: Nordic Crag Mountain Rock Base -->
+  <ellipse cx="250" cy="580" rx="160" ry="30" fill="#0f172a" opacity="0.2" />
+  <path d="M120 570 L150 490 L210 470 L300 460 L360 500 L380 570 L250 595 Z" fill="url(#thorRockGrad)" />
+  <path d="M150 490 L220 510 L300 480 L360 500 L320 560 L180 565 Z" fill="#1e293b" opacity="0.7" />
+  <path d="M170 510 L250 495 L320 520 L270 570 Z" fill="#64748b" opacity="0.4" />
+
+  <!-- Thor Statue Figure -->
+  <g id="thor">
+    <!-- Flowing Red Cape -->
+    <path d="M210 230 C130 260, 90 380, 110 500 C150 470, 180 390, 200 310 Z" fill="url(#thorCapeGrad)" />
+    <path d="M280 230 C360 260, 390 390, 370 510 C340 470, 310 390, 290 310 Z" fill="url(#thorCapeGrad)" />
+
+    <!-- Legs & Armor Boots -->
+    <path d="M215 380 L200 480 L230 485 L245 400 Z" fill="url(#thorArmorGrad)" stroke="#0f172a" stroke-width="1.5" />
+    <path d="M265 380 L280 475 L310 470 L285 395 Z" fill="url(#thorArmorGrad)" stroke="#0f172a" stroke-width="1.5" />
+
+    <!-- Torso with Asgardian Disk Plates -->
+    <path d="M210 240 L280 240 L270 385 L220 385 Z" fill="url(#thorArmorGrad)" />
+    <!-- Armor Plates (Circles) -->
+    <circle cx="230" cy="270" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+    <circle cx="260" cy="270" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+    <circle cx="232" cy="315" r="13" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+    <circle cx="258" cy="315" r="13" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+
+    <!-- Left Arm & Stormbreaker Axe -->
+    <path d="M210 240 L160 270 L140 320 L155 330 L180 290 L215 265 Z" fill="url(#thorArmorGrad)" />
+    <!-- Stormbreaker Handle -->
+    <line x1="120" y1="210" x2="160" y2="440" stroke="#78350f" stroke-width="7" stroke-linecap="round" />
+    <!-- Stormbreaker Axe Head -->
+    <path d="M90 220 L135 200 L130 250 L85 245 Z" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+    <path d="M135 200 L170 215 L165 240 L130 235 Z" fill="#64748b" stroke="#334155" stroke-width="2" />
+
+    <!-- Right Arm holding Mjolnir raised high -->
+    <path d="M280 240 L340 210 L370 150 L388 158 L360 225 L290 265 Z" fill="url(#thorArmorGrad)" />
+    <!-- Mjolnir Handle & Hammer -->
+    <line x1="375" y1="150" x2="410" y2="105" stroke="#78350f" stroke-width="6" />
+    <rect x="390" y="70" width="55" height="40" rx="6" fill="#cbd5e1" stroke="#334155" stroke-width="3" transform="rotate(-30 415 90)" />
+
+    <!-- Head & Beard with Golden Flowing Hair -->
+    <ellipse cx="245" cy="195" rx="20" ry="24" fill="#fed7aa" />
+    <path d="M230 180 Q245 150 265 180 Q255 160 230 180 Z" fill="#eab308" />
+    <path d="M232 205 Q245 225 258 205 Z" fill="#ca8a04" />
+  </g>
+
+  <!-- Blue Lightning Arcs (LED FX simulation) -->
+  <g filter="url(#lightningGlow)">
+    <path d="M410 75 L430 40 L450 60 L470 20" stroke="#60a5fa" stroke-width="3" fill="none" />
+    <path d="M400 95 L380 80 L360 110 L340 90" stroke="#93c5fd" stroke-width="2.5" fill="none" />
+    <path d="M100 230 L70 220 L85 260 L50 270" stroke="#60a5fa" stroke-width="2.5" fill="none" />
+    <path d="M250 470 L230 520 L260 550" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.8" />
+  </g>
+</svg>

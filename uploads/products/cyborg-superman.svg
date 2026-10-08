@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="supCape" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <linearGradient id="cyberMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="60%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="supBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fortress of Solitude Crystal/Ruin Pillar Pedestal -->
+  <ellipse cx="250" cy="580" rx="160" ry="30" fill="#0f172a" opacity="0.25" />
+  <path d="M140 570 L170 480 L230 460 L320 460 L350 490 L360 570 Z" fill="#334155" />
+  <path d="M190 480 L240 430 L300 450 L270 510 Z" fill="#475569" />
+
+  <!-- Flowing Red Cape billowing dramatically -->
+  <path d="M220 230 C120 210, 60 350, 80 540 C140 500, 180 380, 210 290 Z" fill="url(#supCape)" />
+  <path d="M270 230 C380 200, 440 330, 420 540 C370 480, 320 370, 280 290 Z" fill="url(#supCape)" />
+
+  <!-- Cyborg Superman Figure -->
+  <g id="figure">
+    <!-- Left Leg: Blue Suit; Right Leg: Exposed Cybernetic Endoskeleton -->
+    <path d="M215 370 L195 460 L210 520 L230 520 L240 460 L240 380 Z" fill="url(#supBlue)" />
+    <!-- Cybernetic Right Leg -->
+    <path d="M260 380 L270 450 L280 520 L300 520 L295 450 L280 370 Z" fill="url(#cyberMetal)" stroke="#0f172a" stroke-width="1.5" />
+
+    <!-- Torso: Left Half Superman Suit with 'S' shield, Right Half Exposed Pistons & Chrome -->
+    <path d="M210 240 L250 240 L250 375 L220 375 Z" fill="url(#supBlue)" />
+    <path d="M250 240 L290 240 L280 375 L250 375 Z" fill="url(#cyberMetal)" />
+
+    <!-- 'S' Shield (Torn on right side) -->
+    <polygon points="250,260 230,270 235,300 250,315 265,300 270,270" fill="#dc2626" stroke="#facc15" stroke-width="2" />
+    <path d="M245 270 Q255 285 245 300" stroke="#facc15" stroke-width="3" fill="none" />
+
+    <!-- Left Arm (flesh/suit) -->
+    <path d="M210 245 L170 275 L155 335 L175 340 L195 295 L225 265 Z" fill="url(#supBlue)" />
+
+    <!-- Right Arm (Gargantuan Cybernetic Arm & Cannon Claws) -->
+    <path d="M290 245 L345 250 L380 290 L365 305 L335 275 L285 265 Z" fill="url(#cyberMetal)" stroke="#334155" stroke-width="2" />
+    <!-- Cyber Claw Fingers -->
+    <path d="M375 290 L395 285 M380 298 L400 300 M370 305 L390 315" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Head: Half Kal-El / Half Chrome Skull with Glowing Red Eye -->
+    <ellipse cx="250" cy="195" rx="18" ry="24" fill="#fed7aa" />
+    <!-- Cyber Half Overlay -->
+    <path d="M250 171 C260 171, 268 181, 268 195 C268 209, 260 219, 250 219 Z" fill="url(#cyberMetal)" />
+    <!-- Red Terminator Glowing Eye -->
+    <circle cx="259" cy="193" r="4" fill="#ff0000" />
+    <circle cx="259" cy="193" r="1.5" fill="#ffffff" />
+    <!-- Superman Hair Spitcurl on Left -->
+    <path d="M235 180 Q245 170 250 178" stroke="#0f172a" stroke-width="4" fill="none" />
+  </g>
+</svg>

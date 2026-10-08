@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1d5db;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d1d5db;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00000030"/>
+    </filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+  <g filter="url(#shadow)">
+    <rect x="75" y="75" width="350" height="215" rx="14" fill="url(#lidGrad)"/>
+    <rect x="85" y="85" width="330" height="195" rx="8" fill="url(#screenGrad)"/>
+    <rect x="90" y="90" width="320" height="185" rx="6" fill="#0f2042"/>
+    <rect x="90" y="257" width="320" height="18" rx="0" fill="#00000060"/>
+    <circle cx="250" cy="266" r="6" fill="#0078d4"/>
+    <circle cx="250" cy="88" r="2.5" fill="#333"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="60" y="288" width="380" height="28" rx="5" fill="url(#baseGrad)"/>
+    <rect x="75" y="284" width="350" height="7" rx="3" fill="#b0b4bc"/>
+    <rect x="85" y="292" width="330" height="20" rx="3" fill="#d8dce4"/>
+    <ellipse cx="250" cy="318" rx="190" ry="6" fill="#00000015"/>
+  </g>
+  <rect x="60" y="284" width="380" height="4" rx="2" fill="#0078d4" opacity="0.3"/>
+  <text x="250" y="370" font-size="21" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">HP Envy x360</text>
+  <text x="250" y="394" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">14" 2-in-1 Touchscreen · Intel Core i7</text>
+  <text x="250" y="416" font-size="13" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">16GB RAM · 512GB SSD · Natural Silver</text>
+  <rect x="188" y="432" width="124" height="26" rx="13" fill="#dbeafe"/>
+  <text x="250" y="449" font-size="11" fill="#1d4ed8" font-family="Arial" text-anchor="middle" font-weight="700">360° Convertible Touchscreen</text>
+</svg>

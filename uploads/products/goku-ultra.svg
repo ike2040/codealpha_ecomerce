@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="auraGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#e0f2fe" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="dbzOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="dbzBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Polished Tournament of Power Rock Pillar Base -->
+  <ellipse cx="250" cy="580" rx="160" ry="30" fill="#0f172a" opacity="0.25" />
+  <path d="M120 570 L150 490 L210 470 L300 465 L360 500 L380 570 Z" fill="#475569" />
+  <path d="M160 500 L240 480 L310 510 L280 565 Z" fill="#334155" />
+
+  <!-- Ultra Instinct Translucent Silver-Blue Energy Aura -->
+  <g filter="url(#ultraGlow)">
+    <path d="M250 100 C150 180, 100 320, 120 520 C190 480, 210 450, 250 450 C290 450, 310 480, 380 520 C400 320, 350 180, 250 100 Z" fill="url(#auraGrad)" />
+  </g>
+
+  <!-- Goku Figure -->
+  <g id="goku">
+    <!-- Blue Boots with Red Laces -->
+    <path d="M210 470 L200 550 L230 550 L235 480 Z" fill="url(#dbzBlue)" />
+    <path d="M265 480 L270 550 L300 550 L290 470 Z" fill="url(#dbzBlue)" />
+    <line x1="215" y1="490" x2="215" y2="540" stroke="#ef4444" stroke-width="2" />
+    <line x1="285" y1="490" x2="285" y2="540" stroke="#ef4444" stroke-width="2" />
+
+    <!-- Torn Orange Gi Pants -->
+    <path d="M200 380 L195 480 L235 480 L245 400 Z" fill="url(#dbzOrange)" />
+    <path d="M255 400 L265 480 L305 480 L300 380 Z" fill="url(#dbzOrange)" />
+    <!-- Blue Sash Belt -->
+    <rect x="210" y="375" width="80" height="15" rx="3" fill="url(#dbzBlue)" />
+
+    <!-- Bare Muscular Torso (Shredded Battle Damage) -->
+    <path d="M200 240 L300 240 L280 380 L220 380 Z" fill="#fed7aa" stroke="#ca8a04" stroke-width="1.5" />
+    <!-- Pectorals & Abs Definition -->
+    <path d="M220 270 Q250 285 280 270" stroke="#b45309" stroke-width="2" fill="none" />
+    <line x1="250" y1="275" x2="250" y2="360" stroke="#b45309" stroke-width="2" />
+    <path d="M230 305 Q250 315 270 305" stroke="#b45309" stroke-width="2" fill="none" />
+    <path d="M235 340 Q250 350 265 340" stroke="#b45309" stroke-width="2" fill="none" />
+
+    <!-- Muscular Arms with Blue Wristbands -->
+    <path d="M200 240 L160 280 L140 340 L160 350 L180 310 L210 265 Z" fill="#fed7aa" stroke="#ca8a04" stroke-width="1" />
+    <rect x="140" y="325" width="22" height="18" rx="2" fill="url(#dbzBlue)" />
+
+    <path d="M300 240 L340 280 L360 340 L340 350 L320 310 L290 265 Z" fill="#fed7aa" stroke="#ca8a04" stroke-width="1" />
+    <rect x="338" y="325" width="22" height="18" rx="2" fill="url(#dbzBlue)" />
+
+    <!-- Head & Face -->
+    <polygon points="230,200 250,235 270,200" fill="#fed7aa" />
+    <!-- Silver Ultra Instinct Eyes -->
+    <circle cx="242" cy="205" r="3.5" fill="#94a3b8" stroke="#0f172a" stroke-width="1" />
+    <circle cx="258" cy="205" r="3.5" fill="#94a3b8" stroke="#0f172a" stroke-width="1" />
+
+    <!-- Spiky Flowing Silver Hair (Ultra Instinct) -->
+    <path d="M210 190 L170 160 L215 155 L190 120 L235 130 L230 85 L260 115 L275 90 L285 130 L325 125 L300 160 L335 170 L290 190 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <path d="M225 155 L250 120 L260 155 L275 135 L285 170" stroke="#cbd5e1" stroke-width="2" fill="none" />
+  </g>
+</svg>

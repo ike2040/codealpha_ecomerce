@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1"/><stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1"/></linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#1c5b8a;stop-opacity:1"/><stop offset="40%" style="stop-color:#2175b5;stop-opacity:1"/><stop offset="100%" style="stop-color:#1c5b8a;stop-opacity:1"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="4" dy="12" stdDeviation="16" flood-color="#00000045"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+  <g filter="url(#shadow)">
+    <rect x="145" y="130" width="210" height="250" rx="105" fill="url(#bodyGrad)"/>
+    <ellipse cx="250" cy="130" rx="105" ry="20" fill="#2a8ad4"/>
+    <ellipse cx="250" cy="130" rx="40" ry="8" fill="#1a6aa0"/>
+    <text x="250" y="133" font-size="11" font-weight="900" fill="white" font-family="Arial" text-anchor="middle" letter-spacing="2">JBL</text>
+    <ellipse cx="250" cy="380" rx="105" ry="20" fill="#0d4066"/>
+    <circle cx="250" cy="230" r="18" fill="#1a3a5c"/>
+    <polygon points="244,222 244,238 260,230" fill="white"/>
+    <circle cx="208" cy="255" r="12" fill="#1a3a5c"/>
+    <text x="208" y="260" font-size="14" fill="white" font-family="Arial" text-anchor="middle">−</text>
+    <circle cx="292" cy="255" r="12" fill="#1a3a5c"/>
+    <text x="292" y="260" font-size="14" fill="white" font-family="Arial" text-anchor="middle">+</text>
+    <rect x="190" y="360" width="120" height="6" rx="3" fill="#60a5fa" opacity="0.8"/>
+  </g>
+  <text x="250" y="425" font-size="21" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">JBL Charge 5</text>
+  <text x="250" y="448" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">Portable Bluetooth Speaker · IP67 Waterproof</text>
+  <text x="250" y="469" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">20hr Playtime · Built-in Powerbank · Deep Bass</text>
+</svg>

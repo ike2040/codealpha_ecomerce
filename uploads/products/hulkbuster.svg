@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="hbRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="60%" stop-color="#991b1b" />
+      <stop offset="100%" stop-color="#450a0a" />
+    </linearGradient>
+    <linearGradient id="hbGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Heavy Duty Mechanical Pedestal -->
+  <ellipse cx="250" cy="580" rx="180" ry="32" fill="#0f172a" opacity="0.3" />
+  <ellipse cx="250" cy="565" rx="165" ry="24" fill="#334155" stroke="#475569" stroke-width="4" />
+  <ellipse cx="250" cy="560" rx="130" ry="18" fill="#1e293b" />
+  <rect x="230" y="555" width="40" height="10" rx="4" fill="#ff5436" opacity="0.8" />
+
+  <!-- Hulkbuster Heavy Armor Silhouette -->
+  <g id="hulkbuster">
+    <!-- Massive Heavy Legs -->
+    <path d="M160 400 L140 480 L150 560 L200 560 L210 480 L210 400 Z" fill="url(#hbRed)" stroke="#450a0a" stroke-width="2" />
+    <path d="M155 420 L150 470 L195 470 L195 420 Z" fill="url(#hbGold)" />
+
+    <path d="M340 400 L360 480 L350 560 L300 560 L290 480 L290 400 Z" fill="url(#hbRed)" stroke="#450a0a" stroke-width="2" />
+    <path d="M345 420 L350 470 L305 470 L305 420 Z" fill="url(#hbGold)" />
+
+    <!-- Massive Broad Torso & Chest Armor -->
+    <path d="M150 220 L350 220 L330 420 L170 420 Z" fill="url(#hbRed)" stroke="#450a0a" stroke-width="3" />
+    <!-- Gold Breastplate Accents -->
+    <path d="M165 240 L230 240 L235 340 L180 340 Z" fill="url(#hbGold)" />
+    <path d="M335 240 L270 240 L265 340 L320 340 Z" fill="url(#hbGold)" />
+
+    <!-- Central Arc Reactor (Heavy) -->
+    <circle cx="250" cy="290" r="24" fill="#ffffff" stroke="#38bdf8" stroke-width="5" />
+    <circle cx="250" cy="290" r="12" fill="#67e8f9" />
+
+    <!-- Massive Bulky Shoulders -->
+    <circle cx="120" cy="220" r="55" fill="url(#hbRed)" stroke="#450a0a" stroke-width="3" />
+    <circle cx="120" cy="220" r="30" fill="url(#hbGold)" />
+    <circle cx="380" cy="220" r="55" fill="url(#hbRed)" stroke="#450a0a" stroke-width="3" />
+    <circle cx="380" cy="220" r="30" fill="url(#hbGold)" />
+
+    <!-- Heavy Arms & Fists -->
+    <path d="M110 270 L90 380 L130 430 L160 380 L130 300 Z" fill="url(#hbRed)" stroke="#450a0a" stroke-width="2" />
+    <circle cx="110" cy="410" r="22" fill="#7f1d1d" stroke="#f59e0b" stroke-width="3" />
+
+    <path d="M390 270 L410 380 L370 430 L340 380 L370 300 Z" fill="url(#hbRed)" stroke="#450a0a" stroke-width="2" />
+    <circle cx="390" cy="410" r="22" fill="#7f1d1d" stroke="#f59e0b" stroke-width="3" />
+
+    <!-- Dome Helmet -->
+    <ellipse cx="250" cy="180" rx="36" ry="28" fill="url(#hbRed)" stroke="#450a0a" stroke-width="2" />
+    <path d="M230 175 L270 175 L265 200 L235 200 Z" fill="url(#hbGold)" />
+    <line x1="236" y1="185" x2="246" y2="185" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="254" y1="185" x2="264" y2="185" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

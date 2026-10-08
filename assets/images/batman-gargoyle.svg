@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="gargoyleStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="60%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="batSuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="70%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Gotham Cathedral Gothic Gargoyle Pedestal Base -->
+  <ellipse cx="250" cy="580" rx="160" ry="30" fill="#0f172a" opacity="0.35" />
+  <!-- Gothic Base Plinth -->
+  <path d="M120 570 L140 480 L180 430 L320 430 L360 480 L380 570 Z" fill="url(#gargoyleStone)" />
+  <!-- Gargoyle Grotesque Head Perch protruding forward -->
+  <path d="M160 450 Q250 490 340 450 L310 520 Q250 550 190 520 Z" fill="#334155" />
+  <circle cx="210" cy="490" r="8" fill="#64748b" />
+  <circle cx="290" cy="490" r="8" fill="#64748b" />
+  <!-- Gargoyle Horns/Ears -->
+  <path d="M180 440 L160 410 L190 430 Z M320 440 L340 410 L310 430 Z" fill="#1e293b" />
+
+  <!-- The Batman Statue Figure perched crouched on the Gargoyle -->
+  <g id="batman">
+    <!-- Sweeping Bat Cape draped over shoulders and base -->
+    <path d="M200 230 C110 260, 80 420, 100 560 C150 530, 190 420, 210 320 Z" fill="#090d16" />
+    <path d="M300 230 C390 260, 420 420, 400 560 C350 530, 310 420, 290 320 Z" fill="#090d16" />
+
+    <!-- Crouched Legs on Gargoyle ledge -->
+    <path d="M210 330 L180 390 L210 440 L235 440 L230 380 L250 340 Z" fill="url(#batSuit)" />
+    <path d="M290 330 L320 390 L290 440 L265 440 L270 380 L250 340 Z" fill="url(#batSuit)" />
+
+    <!-- Torso (tactical armor plates) -->
+    <path d="M210 230 L290 230 L280 345 L220 345 Z" fill="url(#batSuit)" stroke="#090d16" stroke-width="2" />
+    <!-- Bat Chest Emblem (Matte Black) -->
+    <path d="M250 250 L240 260 L225 255 L235 275 L250 285 L265 275 L275 255 L260 260 Z" fill="#090d16" />
+
+    <!-- Tactical Utility Belt (Matte Gold) -->
+    <rect x="220" y="335" width="60" height="12" rx="3" fill="#ca8a04" stroke="#a16207" stroke-width="1.5" />
+    <rect x="244" y="332" width="12" height="16" rx="2" fill="#eab308" />
+
+    <!-- Arms: Left arm resting on knee, Right holding Batarang -->
+    <path d="M210 235 L170 270 L180 340 L200 345 L190 290 L220 255 Z" fill="url(#batSuit)" />
+    <path d="M290 235 L330 270 L320 330 L300 335 L310 285 L280 255 Z" fill="url(#batSuit)" />
+    <!-- Batarang in Hand -->
+    <path d="M300 335 L315 325 L330 335 L320 340 Z" fill="#475569" />
+
+    <!-- Cowl Mask with Pointed Ears -->
+    <ellipse cx="250" cy="195" rx="18" ry="24" fill="#090d16" />
+    <!-- Bat Ears -->
+    <polygon points="234,185 230,145 242,175" fill="#090d16" />
+    <polygon points="266,185 270,145 258,175" fill="#090d16" />
+    <!-- White Eye Slits -->
+    <line x1="240" y1="192" x2="246" y2="194" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="260" y1="192" x2="254" y2="194" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

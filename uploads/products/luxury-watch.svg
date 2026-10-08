@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fafaf9;stop-opacity:1"/><stop offset="100%" style="stop-color:#f0ede8;stop-opacity:1"/></linearGradient>
+    <linearGradient id="caseGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:1"/><stop offset="30%" style="stop-color:#e8e8e8;stop-opacity:1"/><stop offset="60%" style="stop-color:#a8a8a8;stop-opacity:1"/><stop offset="100%" style="stop-color:#888;stop-opacity:1"/></linearGradient>
+    <linearGradient id="dialGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/><stop offset="100%" style="stop-color:#0f0f1a;stop-opacity:1"/></linearGradient>
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#1f2937;stop-opacity:1"/><stop offset="50%" style="stop-color:#374151;stop-opacity:1"/><stop offset="100%" style="stop-color:#1f2937;stop-opacity:1"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="3" dy="10" stdDeviation="14" flood-color="#00000050"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+  <rect x="215" y="55" width="70" height="135" rx="14" fill="url(#strapGrad)"/>
+  <rect x="215" y="310" width="70" height="130" rx="14" fill="url(#strapGrad)"/>
+  <rect x="232" y="400" width="36" height="16" rx="4" fill="#6b7280"/>
+  <circle cx="250" cy="355" r="3" fill="#111"/>
+  <circle cx="250" cy="370" r="3" fill="#111"/>
+  <circle cx="250" cy="385" r="3" fill="#111"/>
+  <g filter="url(#shadow)">
+    <rect x="140" y="150" width="220" height="200" rx="40" fill="url(#caseGrad)"/>
+    <rect x="150" y="160" width="200" height="180" rx="34" fill="#b0b0b0"/>
+    <rect x="162" y="172" width="176" height="156" rx="26" fill="url(#dialGrad)"/>
+    <rect x="358" y="233" width="14" height="34" rx="5" fill="url(#caseGrad)"/>
+    <rect x="358" y="205" width="10" height="18" rx="4" fill="#a0a0a0"/>
+    <rect x="358" y="277" width="10" height="18" rx="4" fill="#a0a0a0"/>
+    <circle cx="250" cy="250" r="80" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <rect x="248" y="178" width="4" height="14" rx="1" fill="#f59e0b" transform="rotate(0 250 250)"/>
+    <rect x="248" y="178" width="4" height="14" rx="1" fill="#f59e0b" transform="rotate(90 250 250)"/>
+    <rect x="248" y="178" width="4" height="14" rx="1" fill="#f59e0b" transform="rotate(180 250 250)"/>
+    <rect x="248" y="178" width="4" height="14" rx="1" fill="#f59e0b" transform="rotate(270 250 250)"/>
+    <circle cx="215" cy="250" r="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="285" cy="250" r="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="250" cy="292" r="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <line x1="250" y1="250" x2="250" y2="210" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <line x1="250" y1="250" x2="290" y2="230" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="250" y1="250" x2="220" y2="295" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="250" cy="250" r="5" fill="#f59e0b"/>
+    <text x="250" y="240" font-size="7" fill="#94a3b8" font-family="Arial" text-anchor="middle" letter-spacing="2">CHRONOGRAPH</text>
+    <text x="250" y="270" font-size="6" fill="#64748b" font-family="Arial" text-anchor="middle">AUTOMATIC · 50M</text>
+  </g>
+  <text x="250" y="425" font-size="19" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">Luxury Chronograph Watch</text>
+  <text x="250" y="447" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">Stainless Steel · Sapphire Crystal · Automatic</text>
+  <text x="250" y="468" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">50M Water Resistant · Genuine Leather Strap</text>
+</svg>

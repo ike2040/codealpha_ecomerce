@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="starkCrimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="60%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <linearGradient id="starkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    <linearGradient id="gantryMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <radialGradient id="arcReactorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Stark Industries Circular Gantry Platform -->
+  <ellipse cx="250" cy="580" rx="160" ry="32" fill="#0f172a" opacity="0.25" />
+  <ellipse cx="250" cy="560" rx="145" ry="24" fill="url(#gantryMetal)" stroke="#64748b" stroke-width="3" />
+  <ellipse cx="250" cy="558" rx="120" ry="18" fill="#1e293b" />
+  <ellipse cx="250" cy="556" rx="90" ry="14" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="8,6" />
+  
+  <!-- Mechanical Gantry Robot Arms (Assembly Claws around Iron Man) -->
+  <g id="gantry-arms" stroke="#64748b" stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- Left Gantry Arm -->
+    <path d="M120 560 L100 400 L140 300 L190 280" />
+    <circle cx="100" cy="400" r="8" fill="#eab308" />
+    <circle cx="140" cy="300" r="7" fill="#eab308" />
+    <!-- Claw -->
+    <path d="M185 270 L198 280 L185 290" stroke="#f59e0b" stroke-width="4" />
+
+    <!-- Right Gantry Arm -->
+    <path d="M380 560 L400 400 L360 300 L310 280" />
+    <circle cx="400" cy="400" r="8" fill="#eab308" />
+    <circle cx="360" cy="300" r="7" fill="#eab308" />
+    <!-- Claw -->
+    <path d="M315 270 L302 280 L315 290" stroke="#f59e0b" stroke-width="4" />
+  </g>
+
+  <!-- Iron Man Mark IV Suit Figure -->
+  <g id="iron-man">
+    <!-- Legs (Diecast armor with gold thigh plates) -->
+    <path d="M210 390 L195 480 L210 550 L230 550 L235 485 L240 395 Z" fill="url(#starkCrimson)" />
+    <path d="M205 400 L200 460 L230 460 L235 400 Z" fill="url(#starkGold)" />
+
+    <path d="M260 395 L265 485 L270 550 L290 550 L305 480 L290 390 Z" fill="url(#starkCrimson)" />
+    <path d="M265 400 L270 460 L300 460 L295 400 Z" fill="url(#starkGold)" />
+
+    <!-- Torso (Crimson with Gold Biceps & Ribplates) -->
+    <path d="M205 240 L295 240 L285 390 L215 390 Z" fill="url(#starkCrimson)" />
+    <!-- Gold Side Ribs -->
+    <path d="M210 280 L225 280 L225 360 L215 370 Z" fill="url(#starkGold)" />
+    <path d="M290 280 L275 280 L275 360 L285 370 Z" fill="url(#starkGold)" />
+
+    <!-- RT Arc Reactor (Glowing Circle) -->
+    <circle cx="250" cy="285" r="16" fill="url(#arcReactorGlow)" />
+    <circle cx="250" cy="285" r="10" fill="#ffffff" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- Arms (Repulsor Gauntlets) -->
+    <!-- Left Arm -->
+    <path d="M205 240 L160 270 L140 340 L155 350 L180 300 L215 260 Z" fill="url(#starkCrimson)" />
+    <path d="M175 270 L195 265 L175 310 L160 310 Z" fill="url(#starkGold)" />
+    <!-- Repulsor Palm Glow -->
+    <circle cx="145" cy="345" r="6" fill="#67e8f9" />
+
+    <!-- Right Arm -->
+    <path d="M295 240 L340 270 L360 340 L345 350 L320 300 L285 260 Z" fill="url(#starkCrimson)" />
+    <path d="M325 270 L305 265 L325 310 L340 310 Z" fill="url(#starkGold)" />
+    <!-- Repulsor Palm Glow -->
+    <circle cx="355" cy="345" r="6" fill="#67e8f9" />
+
+    <!-- Helmet (Gold Faceplate & Red Crest) -->
+    <path d="M228 175 C228 150, 272 150, 272 175 L275 230 C275 240, 225 240, 225 230 Z" fill="url(#starkCrimson)" />
+    <!-- Gold Faceplate -->
+    <path d="M232 180 L268 180 L265 225 L250 232 L235 225 Z" fill="url(#starkGold)" stroke="#ca8a04" stroke-width="1.5" />
+    <!-- Glowing Eye Slits -->
+    <line x1="237" y1="195" x2="246" y2="195" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="254" y1="195" x2="263" y2="195" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

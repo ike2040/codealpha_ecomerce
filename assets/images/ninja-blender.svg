@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="jarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9ca3af;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#d1d5db;stop-opacity:0.9"/>
+      <stop offset="70%" style="stop-color:#e5e7eb;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a3e635;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#65a30d;stop-opacity:0.5"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-5%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="12" stdDeviation="14" flood-color="#00000045"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- MOTOR BASE -->
+  <g filter="url(#shadow)">
+    <rect x="160" y="340" width="180" height="110" rx="20" fill="url(#baseGrad)"/>
+    <!-- Base highlight -->
+    <rect x="170" y="348" width="160" height="4" rx="2" fill="#4b5563"/>
+    <!-- Power button -->
+    <circle cx="220" cy="390" r="20" fill="#1a1a2e" stroke="#4b5563" stroke-width="2"/>
+    <text x="220" y="395" font-size="14" font-weight="900" fill="#ef4444" font-family="Arial" text-anchor="middle">⏻</text>
+    <!-- Speed dial -->
+    <circle cx="290" cy="390" r="22" fill="#111827" stroke="#4b5563" stroke-width="2"/>
+    <circle cx="290" cy="390" r="14" fill="#1f2937"/>
+    <line x1="290" y1="376" x2="290" y2="382" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+    <text x="290" y="408" font-size="8" fill="#6b7280" font-family="Arial" text-anchor="middle">SPEED</text>
+    <!-- Ninja logo -->
+    <text x="250" y="445" font-size="12" font-weight="900" fill="#374151" font-family="Arial" text-anchor="middle" letter-spacing="3">NINJA</text>
+    <!-- Base shadow -->
+    <ellipse cx="250" cy="450" rx="100" ry="10" fill="#00000020"/>
+  </g>
+
+  <!-- BLENDER JAR (glass) -->
+  <g filter="url(#shadow)">
+    <!-- Jar body (trapezoidal profile) -->
+    <path d="M 190 120 L 175 340 L 325 340 L 310 120 Z" fill="url(#jarGrad)"/>
+
+    <!-- Glass reflection/highlight -->
+    <path d="M 200 130 L 188 330 L 215 330 L 225 130 Z" fill="white" opacity="0.25"/>
+
+    <!-- Liquid contents (green smoothie) -->
+    <path d="M 185 250 L 175 340 L 325 340 L 315 250 Z" fill="url(#liquidGrad)"/>
+    <!-- Liquid surface -->
+    <path d="M 185 250 Q 250 240 315 250" fill="none" stroke="#84cc16" stroke-width="2" opacity="0.8"/>
+    <!-- Bubbles in liquid -->
+    <circle cx="220" cy="290" r="6" fill="white" opacity="0.3"/>
+    <circle cx="270" cy="305" r="4" fill="white" opacity="0.25"/>
+    <circle cx="295" cy="275" r="5" fill="white" opacity="0.2"/>
+    <circle cx="240" cy="320" r="3" fill="white" opacity="0.3"/>
+
+    <!-- Blade assembly at bottom of jar -->
+    <ellipse cx="250" cy="335" rx="50" ry="8" fill="#9ca3af"/>
+    <!-- Blade cross -->
+    <line x1="210" y1="335" x2="290" y2="335" stroke="#6b7280" stroke-width="4"/>
+    <line x1="250" y1="315" x2="250" y2="355" stroke="#6b7280" stroke-width="4"/>
+    <!-- Blade spin effect -->
+    <ellipse cx="250" cy="335" rx="40" ry="4" fill="none" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+
+    <!-- Measurement lines on jar -->
+    <line x1="320" y1="200" x2="310" y2="200" stroke="#6b7280" stroke-width="1.5"/>
+    <text x="325" y="204" font-size="9" fill="#6b7280" font-family="Arial">1000ml</text>
+    <line x1="318" y1="250" x2="310" y2="250" stroke="#6b7280" stroke-width="1.5"/>
+    <text x="323" y="254" font-size="9" fill="#6b7280" font-family="Arial">750ml</text>
+    <line x1="316" y1="300" x2="310" y2="300" stroke="#6b7280" stroke-width="1.5"/>
+    <text x="321" y="304" font-size="9" fill="#6b7280" font-family="Arial">500ml</text>
+
+    <!-- Jar top opening -->
+    <ellipse cx="250" cy="120" rx="60" ry="12" fill="#c0c4cc"/>
+    <ellipse cx="250" cy="120" rx="52" ry="8" fill="#d1d5db"/>
+  </g>
+
+  <!-- LID -->
+  <g filter="url(#shadow)">
+    <ellipse cx="250" cy="112" rx="62" ry="14" fill="#374151"/>
+    <ellipse cx="250" cy="112" rx="50" ry="10" fill="#4b5563"/>
+    <!-- Lid handle -->
+    <rect x="236" y="88" width="28" height="30" rx="14" fill="#374151"/>
+    <rect x="240" y="92" width="20" height="22" rx="10" fill="#4b5563"/>
+    <!-- Vents in lid -->
+    <rect x="238" y="105" width="24" height="4" rx="2" fill="#1f2937"/>
+  </g>
+
+  <!-- Pour spout -->
+  <path d="M 306 130 Q 330 125 335 140 Q 330 148 310 145" fill="#c0c4cc" stroke="#9ca3af" stroke-width="1"/>
+
+  <!-- Handle -->
+  <path d="M 175 180 Q 148 185 145 220 Q 145 260 168 265 L 175 260" fill="none" stroke="#6b7280" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 175 180 Q 148 185 145 220 Q 145 260 168 265 L 175 260" fill="none" stroke="#9ca3af" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Brand text -->
+  <text x="250" y="438" font-size="20" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">Ninja BL610 Pro Blender</text>
+  <text x="250" y="460" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">1000W Professional · 72oz Jar · Crush Ice</text>
+  <text x="250" y="481" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">6 Speed Settings · BPA-Free · Dishwasher Safe</text>
+</svg>

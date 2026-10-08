@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="pedestalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blueSuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="40%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="redSpikeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="glowRing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0" />
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0" />
+    </linearGradient>
+    <filter id="pedestalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="15" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Ground Pedestal Base (Ornate Cyberpunk Architectural Base) -->
+  <g filter="url(#pedestalShadow)">
+    <!-- Base Shadow Ellipse -->
+    <ellipse cx="250" cy="580" rx="170" ry="32" fill="#0f172a" opacity="0.15" />
+    <!-- Tier 1 Base -->
+    <ellipse cx="250" cy="560" rx="145" ry="24" fill="url(#pedestalGrad)" />
+    <path d="M105 560 C105 580, 395 580, 395 560 L395 572 C395 592, 105 592, 105 572 Z" fill="#090d16" />
+    <!-- Glowing Neon Ring on Base -->
+    <ellipse cx="250" cy="554" rx="135" ry="18" fill="none" stroke="url(#glowRing)" stroke-width="4" />
+    
+    <!-- Tier 2 Sphere/Gothic Pillar Base -->
+    <ellipse cx="250" cy="520" rx="110" ry="18" fill="url(#pedestalGrad)" />
+    <path d="M140 520 C140 540, 360 540, 360 520 L350 550 C350 565, 150 565, 150 550 Z" fill="#1e293b" />
+    
+    <!-- Mechanical Architectural Spherical Base -->
+    <circle cx="250" cy="460" r="58" fill="url(#pedestalGrad)" stroke="#475569" stroke-width="3" />
+    <!-- Metallic Gyroscope Rings around pedestal -->
+    <ellipse cx="250" cy="460" rx="75" ry="26" fill="none" stroke="#64748b" stroke-width="5" transform="rotate(-18 250 460)" />
+    <ellipse cx="250" cy="460" rx="72" ry="24" fill="none" stroke="#94a3b8" stroke-width="2" transform="rotate(35 250 460)" />
+    <circle cx="250" cy="460" r="28" fill="#ff5436" opacity="0.85" />
+    
+    <!-- Pillar Platform for Figure -->
+    <path d="M215 405 L285 405 L295 430 L205 430 Z" fill="#334155" />
+  </g>
+
+  <!-- Dynamic Spider-Man 2099 Statue Figure -->
+  <g id="figure">
+    <!-- Web-Cape / Energy Cape in translucent white/cyan -->
+    <path d="M250 210 Q320 170 380 230 Q330 250 350 310 Q280 270 250 240 Z" fill="#f8fafc" opacity="0.8" stroke="#cbd5e1" stroke-width="1.5" />
+    <path d="M245 215 Q170 170 120 240 Q170 260 150 320 Q210 270 245 240 Z" fill="#f1f5f9" opacity="0.6" stroke="#94a3b8" stroke-width="1" />
+
+    <!-- Left Leg (perched on pedestal) -->
+    <path d="M235 340 L195 400 L215 450 L235 448 L220 405 L255 355 Z" fill="url(#blueSuitGrad)" stroke="#1e3a8a" stroke-width="1" />
+    <!-- Right Leg (extended dynamic pose) -->
+    <path d="M265 340 L305 385 L320 440 L345 440 L325 380 L275 335 Z" fill="url(#blueSuitGrad)" stroke="#1e3a8a" stroke-width="1" />
+
+    <!-- Torso (muscular heroic crouch) -->
+    <path d="M230 240 C220 270, 220 310, 235 345 L275 345 C290 310, 290 270, 280 240 Z" fill="url(#blueSuitGrad)" />
+
+    <!-- Red Spider-Man 2099 Skull Emblem on Chest -->
+    <path d="M255 255 L245 270 L255 285 L265 270 Z M240 265 L270 265 M248 285 L242 320 M262 285 L268 320 M235 280 L225 300 M275 280 L285 300" stroke="url(#redSpikeGrad)" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Muscular Arms & Forearm Talons -->
+    <!-- Left Arm -->
+    <path d="M230 245 L175 260 L145 295 L158 305 L185 275 L225 265 Z" fill="url(#blueSuitGrad)" />
+    <!-- Left Arm Spikes / Talons -->
+    <path d="M150 280 L135 275 L155 290 L140 295 L160 305" stroke="url(#redSpikeGrad)" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- Right Arm (raised claw pose) -->
+    <path d="M280 245 L330 220 L365 245 L355 258 L325 235 L275 265 Z" fill="url(#blueSuitGrad)" />
+    <!-- Right Arm Spikes -->
+    <path d="M345 230 L360 215 L350 240 L370 235 L358 250" stroke="url(#redSpikeGrad)" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- Head & Mask -->
+    <ellipse cx="255" cy="205" rx="20" ry="25" fill="url(#blueSuitGrad)" />
+    <!-- Red Spiked Mask Details -->
+    <path d="M245 195 L255 220 L265 195" stroke="url(#redSpikeGrad)" stroke-width="3" fill="none" />
+    <path d="M238 205 L250 215 M272 205 L260 215" stroke="url(#redSpikeGrad)" stroke-width="2.5" fill="none" />
+
+    <!-- Metallic Highlights -->
+    <path d="M240 245 Q245 290 240 330" stroke="#93c5fd" stroke-width="2" opacity="0.6" fill="none" />
+    <path d="M270 245 Q265 290 270 330" stroke="#93c5fd" stroke-width="2" opacity="0.6" fill="none" />
+  </g>
+
+  <!-- Subtle Studio Hologram Ring at Base -->
+  <ellipse cx="250" cy="595" rx="110" ry="16" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.7" />
+  <circle cx="250" cy="611" r="3" fill="#2563eb" />
+</svg>

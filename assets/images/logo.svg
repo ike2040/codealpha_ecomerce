@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="450" height="100">
+  <defs>
+    <linearGradient id="iplGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2332D6" />
+      <stop offset="50%" stop-color="#1b2596" />
+      <stop offset="100%" stop-color="#0a0e2a" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5436" />
+      <stop offset="100%" stop-color="#FFA036" />
+    </linearGradient>
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2332D6" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Icon Emblem (Left) -->
+  <g transform="translate(10, 8)" filter="url(#logoGlow)">
+    <!-- Hexagonal Crown / Shield Container -->
+    <polygon points="42,0 84,24 84,60 42,84 0,60 0,24" fill="url(#iplGrad)" stroke="#3849f7" stroke-width="2" />
+    
+    <!-- Coral/Gold Inner Hexagon Frame -->
+    <polygon points="42,8 74,27 74,56 42,75 10,56 10,27" fill="none" stroke="url(#goldAccent)" stroke-width="2" opacity="0.9" />
+
+    <!-- Stylized Monogram "IPL" (Ike Products Lounge) -->
+    <!-- Letter 'I' (Center Spire) -->
+    <line x1="42" y1="20" x2="42" y2="63" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+    <circle cx="42" cy="18" r="3.5" fill="url(#goldAccent)" />
+
+    <!-- Letter 'P' (Right loop) -->
+    <path d="M42 28 Q62 28 62 40 Q62 52 42 52" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Letter 'L' (Bottom base wing) -->
+    <path d="M24 38 L24 63 L42 63 L58 63" fill="none" stroke="url(#goldAccent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Typography Wordmark (Right) -->
+  <g transform="translate(110, 0)">
+    <!-- "IKE PRODUCTS" -->
+    <text x="0" y="44" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#0A0E2A" letter-spacing="1.5">
+      IKE PRODUCTS
+    </text>
+    
+    <!-- "LOUNGE" with elegant coral spacing -->
+    <text x="0" y="70" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#FF5436" letter-spacing="6.5">
+      LOUNGE
+    </text>
+
+    <!-- Subtitle -->
+    <text x="115" y="69" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="1.5">
+      &bull; EXCLUSIVE COLLECTIBLES
+    </text>
+  </g>
+</svg>

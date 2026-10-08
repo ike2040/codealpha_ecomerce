@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="throneStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#52525b" />
+      <stop offset="50%" stop-color="#3f3f46" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="mandoGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4d7c0f" />
+      <stop offset="70%" stop-color="#365314" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Jabba's Palace Carved Sandstone Throne -->
+  <ellipse cx="250" cy="580" rx="170" ry="30" fill="#0f172a" opacity="0.3" />
+  <!-- Throne Base -->
+  <path d="M110 570 L130 450 L370 450 L390 570 Z" fill="url(#throneStone)" stroke="#27272a" stroke-width="2" />
+  <!-- Throne Backrest & Armrests with Carved Gargoyle Heads -->
+  <rect x="150" y="240" width="200" height="240" rx="12" fill="#27272a" stroke="#52525b" stroke-width="4" />
+  <!-- Armrest Blocks -->
+  <rect x="115" y="380" width="55" height="110" rx="6" fill="#3f3f46" stroke="#27272a" stroke-width="2" />
+  <rect x="330" y="380" width="55" height="110" rx="6" fill="#3f3f46" stroke="#27272a" stroke-width="2" />
+  <!-- Carved Rancor Heads on Armrests -->
+  <circle cx="140" cy="380" r="16" fill="#18181b" />
+  <circle cx="360" cy="380" r="16" fill="#18181b" />
+
+  <!-- Boba Fett Seated Ruler Figure -->
+  <g id="boba-fett">
+    <!-- Seated Legs in Flight Suit -->
+    <path d="M190 440 L180 540 L215 540 L230 460 Z" fill="#71717a" />
+    <rect x="180" y="470" width="30" height="25" rx="4" fill="#eab308" /> <!-- Yellow Knee Pad -->
+    
+    <path d="M310 440 L320 540 L285 540 L270 460 Z" fill="#71717a" />
+    <rect x="290" y="470" width="30" height="25" rx="4" fill="#eab308" />
+
+    <!-- Torso with Weathered Beskar Green Armor Plates -->
+    <path d="M210 270 L290 270 L280 440 L220 440 Z" fill="#18181b" />
+    <!-- Green Chest Plates -->
+    <path d="M215 280 L245 280 L240 330 L220 330 Z" fill="url(#mandoGreen)" stroke="#84cc16" stroke-width="1" />
+    <path d="M285 280 L255 280 L260 330 L280 330 Z" fill="url(#mandoGreen)" stroke="#84cc16" stroke-width="1" />
+    <!-- Yellow Shoulder Pauldron -->
+    <path d="M195 270 L220 270 L210 305 L190 300 Z" fill="#eab308" />
+
+    <!-- EE-3 Carbine Blaster resting on throne knee -->
+    <line x1="220" y1="360" x2="330" y2="450" stroke="#09090b" stroke-width="8" stroke-linecap="round" />
+    <rect x="270" y="390" width="35" height="12" rx="2" fill="#52525b" transform="rotate(38 270 390)" />
+
+    <!-- Arms resting on Throne Armrests -->
+    <path d="M210 280 L160 340 L150 400 L175 400 L185 360 L220 310 Z" fill="#71717a" />
+    <rect x="150" y="360" width="22" height="30" rx="3" fill="url(#mandoGreen)" /> <!-- Left Gauntlet -->
+
+    <path d="M290 280 L340 340 L350 400 L325 400 L315 360 L280 310 Z" fill="#71717a" />
+    <rect x="328" y="360" width="22" height="30" rx="3" fill="url(#mandoGreen)" /> <!-- Right Gauntlet -->
+
+    <!-- Iconic Mandalorian Helmet -->
+    <ellipse cx="250" cy="225" rx="24" ry="28" fill="url(#mandoGreen)" stroke="#14532d" stroke-width="2" />
+    <!-- Rangefinder on Right Ear -->
+    <line x1="275" y1="210" x2="275" y2="180" stroke="#71717a" stroke-width="3" />
+    <rect x="270" y="175" width="10" height="6" fill="#18181b" />
+    <!-- Crimson Brow Trim -->
+    <path d="M230 215 L270 215 L265 220 L235 220 Z" fill="#b91c1c" />
+    <!-- Black T-Visor -->
+    <path d="M232 225 L268 225 L268 233 L254 233 L254 250 L246 250 L246 233 L232 233 Z" fill="#09090b" />
+  </g>
+</svg>

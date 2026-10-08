@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="mustafarLava" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b91c1c" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <filter id="saberGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Mustafar Obsidian & Glowing Lava Pedestal -->
+  <ellipse cx="250" cy="580" rx="160" ry="30" fill="#0f172a" opacity="0.35" />
+  <path d="M120 570 L145 490 L230 470 L330 470 L355 510 L380 570 Z" fill="#18181b" />
+  <!-- Molten Lava Cracks -->
+  <path d="M160 560 Q210 530 250 550 T340 540" stroke="url(#mustafarLava)" stroke-width="6" fill="none" filter="url(#saberGlow)" />
+  <path d="M220 500 L250 530 L280 490" stroke="url(#mustafarLava)" stroke-width="4" fill="none" />
+
+  <!-- Darth Vader Figure -->
+  <g id="vader">
+    <!-- Flowing Black Sith Cloak -->
+    <path d="M210 220 C120 250, 70 410, 80 560 C140 530, 180 420, 200 310 Z" fill="#09090b" />
+    <path d="M290 220 C380 250, 430 410, 420 560 C360 530, 320 420, 300 310 Z" fill="#09090b" />
+
+    <!-- Robed Legs and Shiny Polished Boots -->
+    <path d="M215 370 L205 470 L210 540 L235 540 L240 470 L240 375 Z" fill="#18181b" />
+    <path d="M260 375 L260 470 L265 540 L290 540 L295 470 L285 370 Z" fill="#18181b" />
+    <!-- Boot Polish Highlight -->
+    <line x1="225" y1="480" x2="225" y2="530" stroke="#71717a" stroke-width="2" />
+    <line x1="275" y1="480" x2="275" y2="530" stroke="#71717a" stroke-width="2" />
+
+    <!-- Quilted Torso & Chest Control Box -->
+    <path d="M210 225 L290 225 L285 370 L215 370 Z" fill="#18181b" stroke="#09090b" stroke-width="2" />
+    <!-- Chest Control Box with Red & Blue Switches -->
+    <rect x="230" y="260" width="40" height="42" rx="4" fill="#27272a" stroke="#52525b" stroke-width="1.5" />
+    <circle cx="240" cy="275" r="4" fill="#ef4444" />
+    <circle cx="250" cy="275" r="4" fill="#3b82f6" />
+    <rect x="236" y="288" width="28" height="6" rx="2" fill="#71717a" />
+
+    <!-- Silver Shoulder Armor Trim -->
+    <path d="M205 225 L295 225 L285 245 L215 245 Z" fill="#71717a" />
+
+    <!-- Left Arm holding Red Lightsaber raised -->
+    <path d="M290 230 L340 260 L380 230 L395 242 L350 285 L285 260 Z" fill="#18181b" />
+    <!-- Lightsaber Hilt -->
+    <line x1="385" y1="230" x2="415" y2="200" stroke="#a1a1aa" stroke-width="6" stroke-linecap="square" />
+    <line x1="395" y1="220" x2="405" y2="210" stroke="#18181b" stroke-width="6" />
+    <!-- Crimson Saber Blade with Glow -->
+    <line x1="415" y1="200" x2="480" y2="135" stroke="#ff0044" stroke-width="6" stroke-linecap="round" filter="url(#saberGlow)" />
+    <line x1="415" y1="200" x2="480" y2="135" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Right Arm (Force Choke outstretched hand) -->
+    <path d="M210 230 L160 255 L130 250 L125 265 L155 280 L215 255 Z" fill="#18181b" />
+    <!-- Force Fingers -->
+    <circle cx="120" cy="255" r="7" fill="#27272a" />
+
+    <!-- Iconic Vader Helmet & Facemask -->
+    <!-- Flared Helmet Dome -->
+    <path d="M220 180 C220 135, 280 135, 280 180 L295 210 L205 210 Z" fill="#09090b" />
+    <ellipse cx="250" cy="188" rx="20" ry="22" fill="#18181b" />
+    <!-- Triangular Breathing Grille -->
+    <polygon points="250,198 242,212 258,212" fill="#52525b" />
+    <!-- Tusk Filaments & Lenses -->
+    <circle cx="242" cy="188" r="4" fill="#09090b" stroke="#71717a" stroke-width="1" />
+    <circle cx="258" cy="188" r="4" fill="#09090b" stroke="#71717a" stroke-width="1" />
+  </g>
+</svg>

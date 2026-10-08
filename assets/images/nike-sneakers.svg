@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="shoeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9fafb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e5e7eb;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="soleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="airUnit" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fca5a5;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#00000040"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Shoe shadow -->
+  <ellipse cx="252" cy="375" rx="160" ry="22" fill="#00000015"/>
+
+  <!-- Shoe group -->
+  <g filter="url(#shadow)">
+    <!-- MIDSOLE (white) -->
+    <path d="M 90 330 Q 90 360 120 368 L 380 368 Q 420 368 420 345 L 420 320 Z" fill="white"/>
+
+    <!-- AIR MAX UNIT (visible bubble) -->
+    <ellipse cx="345" cy="345" rx="55" ry="22" fill="url(#airUnit)" opacity="0.85"/>
+    <ellipse cx="345" cy="345" rx="48" ry="16" fill="#fca5a5" opacity="0.5"/>
+    <text x="345" y="349" font-size="7" font-weight="700" fill="#b91c1c" font-family="Arial" text-anchor="middle" letter-spacing="1">AIR MAX</text>
+
+    <!-- OUTSOLE (dark) -->
+    <path d="M 95 360 Q 95 375 125 375 L 385 375 Q 415 375 415 360 L 415 355 Q 380 370 120 370 Z" fill="url(#soleGrad)"/>
+    <!-- Tread grooves -->
+    <line x1="150" y1="368" x2="150" y2="375" stroke="#1f2937" stroke-width="2"/>
+    <line x1="185" y1="368" x2="185" y2="375" stroke="#1f2937" stroke-width="2"/>
+    <line x1="220" y1="368" x2="220" y2="375" stroke="#1f2937" stroke-width="2"/>
+    <line x1="255" y1="368" x2="255" y2="375" stroke="#1f2937" stroke-width="2"/>
+    <line x1="290" y1="368" x2="290" y2="375" stroke="#1f2937" stroke-width="2"/>
+
+    <!-- UPPER (main shoe body) -->
+    <path d="M 95 330 Q 85 280 110 240 Q 140 190 190 175 L 340 170 Q 390 175 415 210 L 420 320 Z" fill="url(#shoeBody)"/>
+
+    <!-- Toe box -->
+    <path d="M 95 330 Q 85 300 105 260 Q 130 220 165 205 L 190 200 Q 130 240 110 300 Z" fill="#f3f4f6"/>
+
+    <!-- Nike Swoosh -->
+    <path d="M 165 290 Q 230 255 340 270 Q 380 274 400 260 Q 370 285 300 282 Q 230 278 185 305 Z" fill="#ef4444"/>
+
+    <!-- Laces -->
+    <rect x="210" y="195" width="130" height="95" rx="5" fill="white" opacity="0.5"/>
+    <!-- Individual lace rows -->
+    <rect x="215" y="200" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <rect x="215" y="212" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <rect x="215" y="224" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <rect x="215" y="236" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <rect x="215" y="248" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <rect x="215" y="260" width="120" height="6" rx="3" fill="#d1d5db"/>
+    <!-- Center vertical lace -->
+    <rect x="273" y="195" width="4" height="100" rx="2" fill="#9ca3af"/>
+
+    <!-- Collar -->
+    <path d="M 285 170 Q 310 165 340 170 Q 390 180 415 210 Q 380 195 335 185 Q 305 178 285 180 Z" fill="#e5e7eb"/>
+
+    <!-- Ankle padding -->
+    <ellipse cx="360" cy="200" rx="35" ry="28" fill="#f3f4f6"/>
+    <ellipse cx="360" cy="200" rx="28" ry="22" fill="white" opacity="0.8"/>
+
+    <!-- Nike logo on ankle -->
+    <path d="M 348 195 Q 360 188 375 192 Q 368 200 360 198 Z" fill="#9ca3af"/>
+
+    <!-- Tongue -->
+    <path d="M 215 185 Q 210 200 210 225 Q 225 218 250 215 Q 275 212 290 215 Q 290 195 285 180 Z" fill="white"/>
+    <!-- Nike text on tongue -->
+    <text x="250" y="204" font-size="8" font-weight="700" fill="#374151" font-family="Arial" text-anchor="middle">NIKE</text>
+  </g>
+
+  <!-- Brand text -->
+  <text x="250" y="415" font-size="21" font-weight="700" fill="#1e293b" font-family="Arial, sans-serif" text-anchor="middle">Nike Air Max 270</text>
+  <text x="250" y="439" font-size="13" fill="#64748b" font-family="Arial, sans-serif" text-anchor="middle">Men's Running Shoes · White/University Red</text>
+  <text x="250" y="460" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif" text-anchor="middle">Sizes: UK 6–12 · Just Do It</text>
+</svg>

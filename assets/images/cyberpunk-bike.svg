@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650">
+  <defs>
+    <linearGradient id="neonRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#cc0044" />
+    </linearGradient>
+    <linearGradient id="cyberChassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Night City Asphalt Display Plinth -->
+  <ellipse cx="250" cy="580" rx="180" ry="32" fill="#0f172a" opacity="0.3" />
+  <ellipse cx="250" cy="565" rx="165" ry="24" fill="#18181b" stroke="#27272a" stroke-width="3" />
+  <!-- Neon Underglow on Pedestal -->
+  <ellipse cx="250" cy="560" rx="145" ry="18" fill="none" stroke="#00f0ff" stroke-width="3" filter="url(#neonGlow)" />
+
+  <!-- Yaiba Kusanagi CT-3X Motorcycle -->
+  <g id="bike" transform="translate(0, 40)">
+    <!-- Front Wheel with Glowing Cyan Hub -->
+    <circle cx="150" cy="420" r="60" fill="#09090b" stroke="#27272a" stroke-width="12" />
+    <circle cx="150" cy="420" r="35" fill="#18181b" stroke="#00f0ff" stroke-width="4" filter="url(#neonGlow)" />
+    <circle cx="150" cy="420" r="14" fill="#3f3f46" />
+
+    <!-- Rear Wheel with Crimson Hub -->
+    <circle cx="360" cy="420" r="60" fill="#09090b" stroke="#27272a" stroke-width="12" />
+    <circle cx="360" cy="420" r="35" fill="#18181b" stroke="#ff0055" stroke-width="4" filter="url(#neonGlow)" />
+    <circle cx="360" cy="420" r="14" fill="#3f3f46" />
+
+    <!-- Low-Slung Aerodynamic Crimson Fairing & Frame -->
+    <path d="M120 380 L180 300 L280 320 L350 350 L380 410 L280 430 L160 410 Z" fill="url(#neonRed)" stroke="#990033" stroke-width="2" />
+    
+    <!-- Cyber Chassis Mechanics & Twin Exhausts -->
+    <path d="M200 360 L320 370 L300 420 L210 415 Z" fill="url(#cyberChassis)" stroke="#52525b" stroke-width="2" />
+    <rect x="290" y="395" width="80" height="14" rx="4" fill="#71717a" stroke="#27272a" stroke-width="2" />
+    <circle cx="370" cy="402" r="6" fill="#09090b" />
+
+    <!-- Windshield & HUD Console -->
+    <path d="M165 310 L210 260 L240 310 Z" fill="#00f0ff" opacity="0.85" stroke="#ffffff" stroke-width="1.5" />
+
+    <!-- Ergonomic Racing Saddle & Tail Cowl -->
+    <path d="M240 315 L320 325 L350 290 L300 305 Z" fill="#18181b" stroke="#27272a" stroke-width="2" />
+
+    <!-- Neon Decals & Tech Badges -->
+    <text x="210" y="348" font-family="'Courier New', monospace" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="2">KUSANAGI</text>
+    <line x1="150" y1="365" x2="270" y2="365" stroke="#facc15" stroke-width="3" />
+  </g>
+</svg>
